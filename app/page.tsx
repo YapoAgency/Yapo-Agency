@@ -426,14 +426,14 @@ Discuter de votre croissance
         </div>
         <div>
           <p className="text-[#FDFCF9]/50 text-sm mb-2">Téléphone</p>
-          <a href="tel:+33600000001" className="block text-[#FDFCF9] font-bold text-lg hover:text-[#D84838] transition-colors">
+          <a href="tel:+33781686105" className="block text-[#FDFCF9] font-bold text-lg hover:text-[#D84838] transition-colors">
             +33 7 81 68 61 05
           </a>
         </div>
       </div>
 
       {/* Email */}
-      <a href="mailto:contact@yapo.fr" className="bg-[#FDFCF9]/5 border border-[#FDFCF9]/10 rounded-2xl p-8 hover:border-[#D84838]/50 transition-all duration-300 group flex flex-col items-center gap-4">
+      <a href="mailto:contact@yapoagency.fr" className="bg-[#FDFCF9]/5 border border-[#FDFCF9]/10 rounded-2xl p-8 hover:border-[#D84838]/50 transition-all duration-300 group flex flex-col items-center gap-4">
         <div className="bg-[#FDFCF9]/5 border border-[#FDFCF9]/10 rounded-2xl p-8 flex flex-col items-center text-center gap-4">
           <svg className="w-7 h-7 text-[#D84838]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
