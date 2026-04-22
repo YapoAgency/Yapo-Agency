@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+* { font-family: 'Manrope', sans-serif; }
+
+
+html {
+scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+background: #0C1C2A;
+overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0C1C2A; }
+::-webkit-scrollbar-thumb { background: #D84838; border-radius: 4px; }
+
+
+.navbar-glass {
+background: rgba(12, 28, 42, 0.85);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(253, 252, 249, 0.1);
+}
+.navbar-scrolled { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(12, 28, 42, 0.25) 0%, rgba(12, 28, 42, 0.25) 100%);
+}
+
+
+@keyframes marquee {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 25s;
+  width: max-content;
+  will-change: transform;
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+
+.service-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+.service-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 25px 50px -12px rgba(216, 72, 56, 0.25);
+border-color: rgba(216, 72, 56, 0.5);
+}
+
+
+.influencer-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+.influencer-card:hover { transform: scale(1.02) translateY(-4px); }
+.influencer-card:hover .influencer-overlay { opacity: 1; }
+
+
+.btn-primary { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.btn-primary:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 40px -10px rgba(216, 72, 56, 0.5);
+}
+
+
+.btn-secondary { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.btn-secondary:hover {
+background: rgba(253, 252, 249, 0.1);
+transform: translateY(-2px);
+}
+
+
+@keyframes fadeInUp {
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up { animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+
+.proof-chip {
+background: rgba(253, 252, 249, 0.08);
+border: 1px solid rgba(253, 252, 249, 0.15);
+}
+
+
+.testimonial-card {
+background: rgba(253, 252, 249, 0.03);
+border: 1px solid rgba(253, 252, 249, 0.08);
 }
