@@ -19,6 +19,7 @@ const influencers = [
   { name: 'Charly', niche: 'Detailing Automobile', followers: '+2K', views: '+2K Abonnés', platforms: 'TikTok / Instagram / Facebook / YouTube', gradient: 'from-[#D84838]/40 to-[#0C1C2A]', photo: '/influenceurs/Charly.jpg' },
   { name: 'Boris Dallo', niche: 'Lifestyle & Sport', followers: '+25K', views: '+25K Abonnés', platforms: 'TikTok / Instagram / Facebook / YouTube / Snapchat', gradient: 'from-[#D84838]/40 to-[#0C1C2A]', photo: '/influenceurs/Boris Dallo.jpg' },
   { name: 'Tshukuma', niche: 'Culture Afro & Musique', followers: '+263K', views: '+263K Abonnés', platforms: 'TikTok', gradient: 'from-[#D84838]/40 to-[#0C1C2A]', photo: '/influenceurs/Tshukuma.jpg' },
+  { name: 'Kali Shakti Ka', niche: 'Bien être & Spiritualité', followers: '+20K', views: '+20K Abonnés', platforms: 'TikTok / Instagram / Facebook', gradient: 'from-[#D84838]/40 to-[#0C1C2A]', photo: '/influenceurs/Kali.jpg' },
 ];
 
 
